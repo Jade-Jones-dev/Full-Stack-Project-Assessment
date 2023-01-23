@@ -1,4 +1,4 @@
-[
+ export const videos = [
   {
     "id": 523523,
     "title": "Never Gonna Give You Up",
