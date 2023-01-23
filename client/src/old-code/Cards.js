@@ -33,12 +33,7 @@ function Cards() {
 						<h4>{video.title}</h4>
 						<p className="ratings">YouTube ratings: {video.rating}</p>
 					<Votes/>
-						<a
-							href={video.url}
-							rel='noopener noreferrer'
-							className='btn btn-primary'>
-							Watch Now
-						</a>
+						
 						<button
 							className='delete'
 							onClick={() => removeElement(index)}>

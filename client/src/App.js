@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Heading from "./Heading";
 import Footer from "./Footer";
 import {videos} from './videos';
@@ -9,13 +9,14 @@ import Video from './Video'
 import "./App.css";
 
 function App() {
+  
   return (
     <div className="App">
       <Heading/>
       <div className="Cards">
       {videos.map((video, index) => {
         return(
-          <Video className="card" {...video} key={video.id} index={index}/>
+          <Video className="card" {...video} key={index}/>
         )
       })}
       </div>
