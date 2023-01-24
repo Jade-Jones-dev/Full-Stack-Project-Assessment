@@ -1,10 +1,10 @@
 import ReactPlayer from "react-player";
 
 
-const Video = ({id, title, url, rating , index}) => {
+const Video = ({title, url, rating}) => {
    
   return (
-    <div className='card' key={index} id={id}>
+    <div className='card' >
         <ReactPlayer
 			className='video'
 	        width={380}

@@ -16,7 +16,7 @@ function App() {
       <div className="Cards">
       {videos.map((video, index) => {
         return(
-          <Video className="card" {...video} key={index}/>
+          <Video className="card" {...video} key={video.id}/>
         )
       })}
       </div>
